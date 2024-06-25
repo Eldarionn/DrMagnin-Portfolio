@@ -1,25 +1,28 @@
 import React from "react";
-import Hero from "./components/Hero";
-import NavBar from "./components/NavBar";
-import About from "./components/About";
-import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
-import Clinic from "./components/Clinic";
-import Instagram from "./components/Instagram";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
+import Service1 from "./pages/Service1";
+import Home from "./pages/Home";
+import Service5 from "./pages/Service5";
+import Service2 from "./pages/Service2";
+import Service4 from "./pages/Service4";
+import Service3 from "./pages/Service3";
 
 const App = () => {
   return (
-    <div>
-      <NavBar />
-      <Hero />
-      <About />
-      <Services />
-      <Testimonials />
-      <Clinic />
-      <Instagram />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/regard" element={<Service1 />} />
+          <Route path="/declat" element={<Service2 />} />
+          <Route path="/facelift" element={<Service3 />} />
+          <Route path="/levres" element={<Service4 />} />
+          <Route path="/hommes" element={<Service5 />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

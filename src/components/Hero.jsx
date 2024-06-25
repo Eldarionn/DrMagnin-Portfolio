@@ -14,8 +14,11 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="relative w-full overflow-hidden">
         <img src="/public/HeroBG.jpeg" alt="bg" />
+        <p className="bg-black text-white px-4 py-3 rotate-90 absolute right-[-5%] top-1/2">
+          Genève, Suisse
+        </p>
       </div>
     </div>
   );

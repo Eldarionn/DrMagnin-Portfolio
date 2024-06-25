@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <div className="pt-[15%] px-[2%] z-10">
+    <div id="testimonials" className="pt-[15%] px-[2%] z-10">
       <div className="w-[60%] mx-auto p-10 text-center leading-[50px] border-[5px] border-red-600">
         <p className="text-[50px]">
           Prenez le Premier Pas Vers Votre Transformation
@@ -16,7 +16,7 @@ const Testimonials = () => {
         Magnin apporte une approche novatrice à la Médecine Esthétique.
       </p>
       <div className="grid grid-cols-4 gap-5 px-[5%]  py-10 h-[350px]">
-        <div className="relative h-[350px] w-full overflow-hidden">
+        <div className="relative h-[350px] w-full overflow-hidden grayscale">
           <img
             src="/public/testimonials1.png"
             className="w-full h-full object-cover"
@@ -29,7 +29,7 @@ const Testimonials = () => {
             Mayra F.
           </p>
         </div>
-        <div className=" relative h-[350px] w-full overflow-hidden">
+        <div className=" relative h-[350px] w-full overflow-hidden grayscale">
           <img
             src="/public/testimonials2.png"
             className="w-full h-full object-cover"
@@ -42,7 +42,7 @@ const Testimonials = () => {
             Noemi C.
           </p>
         </div>
-        <div className="relative h-[350px] w-full overflow-hidden">
+        <div className="relative h-[350px] w-full overflow-hidden grayscale">
           <img
             src="/public/testimonials3.png"
             className="w-full h-full object-cover"
@@ -55,7 +55,7 @@ const Testimonials = () => {
             Millanyia O.
           </p>
         </div>
-        <div className="relative h-[350px] w-full overflow-hidden">
+        <div className="relative h-[350px] w-full overflow-hidden grayscale">
           <img
             src="/public/testimonials4.png"
             className="w-full h-full object-cover"
