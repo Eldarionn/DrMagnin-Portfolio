@@ -5,7 +5,7 @@ const Instagram = () => {
     <div className="pt-[30%] ">
       <h1 className="text-[50px] text-center">Suivez-nous sur Instagram</h1>
       <img
-        src="/public/Instagram.png"
+        src="/Instagram.png"
         className="
       py-[6%]"
       />
