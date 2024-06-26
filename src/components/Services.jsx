@@ -15,7 +15,7 @@ const Services = () => {
 "
             >
               <img
-                src="/public/service1.png"
+                src="/service1.png"
                 className="w-full h-full object-cover group-hover:scale-105 duration-700"
               />
               <p className="absolute text-center bottom-[5%] text-white left-1/2 -translate-x-1/2 text-[40px] opacity-100 transition-opacity duration-700 group-hover:opacity-0 uppercase">
@@ -36,7 +36,7 @@ const Services = () => {
           <Link to="declat">
             <div className="relative h-full w-full overflow-hidden grayscale group hover:grayscale-0 cursor-pointer">
               <img
-                src="/public/service2.jpeg"
+                src="/service2.jpeg"
                 className="w-full h-full object-cover group-hover:scale-105 duration-700"
               />
               <p className="absolute text-center bottom-[5%] text-white left-1/2 -translate-x-1/2 text-[40px] uppercase opacity-100 transition-opacity duration-700 group-hover:opacity-0">
@@ -59,7 +59,7 @@ const Services = () => {
         <Link to="facelift">
           <div className="relative h-full w-full overflow-hidden grayscale hover:grayscale-0 cursor-pointer group">
             <img
-              src="/public/service3.png"
+              src="/service3.png"
               className="w-full h-full object-cover duration-700 group-hover:scale-105"
             />
 
@@ -79,7 +79,7 @@ const Services = () => {
           <Link to="levres">
             <div className="relative h-full w-full overflow-hidden grayscale hover:grayscale-0 cursor-pointer group">
               <img
-                src="/public/service4.png"
+                src="/service4.png"
                 className="w-full h-full object-cover duration-700 group-hover:scale-105"
               />
               <p className="absolute text-center bottom-[5%] text-white left-1/2 -translate-x-1/2 text-[40px] uppercase opacity-100 transition-opacity duration-700 group-hover:opacity-0">
@@ -103,7 +103,7 @@ const Services = () => {
           <Link to="hommes">
             <div className="relative h-full w-full overflow-hidden grayscale hover:grayscale-0 cursor-pointer group">
               <img
-                src="/public/service5.png"
+                src="/service5.png"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <p className="absolute text-center bottom-[5%] text-white left-1/2 -translate-x-1/2 text-[40px] uppercase transition-opacity duration-700 group-hover:opacity-0">

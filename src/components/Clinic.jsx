@@ -6,7 +6,7 @@ const Clinic = () => {
       <div
         className="relative w-[90%] my-6 mx-auto p-10  leading-[50px] flex justify-end text-start"
         style={{
-          backgroundImage: 'url("/public/AboutBG1.png")',
+          backgroundImage: 'url("/AboutBG1.png")',
           backgroundSize: "cover",
         }}
       >

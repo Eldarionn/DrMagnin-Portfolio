@@ -16,7 +16,7 @@ const Home = () => {
       <div
         className={`fixed top-0 ${
           contactOpen === false ? "right-[-1500px]" : "right-0"
-        }  duration-700 h-[800px] w-[50%] bg-white shadow-xl  flex flex-col items-center justify-center z-[60]`}
+        }  duration-700 h-screen w-[50%] bg-white shadow-xl  flex flex-col items-center justify-center z-[60]`}
       >
         <div className="absolute top-5 left-5 cursor-pointer">
           <RxCross1 size={40} onClick={() => setContactOpen(false)} />

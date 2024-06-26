@@ -19,12 +19,12 @@ const About = ({ setContactOpen }) => {
       <div
         className="relative z-30 w-[90%] my-6 mx-auto p-10  leading-[50px] flex justify-end text-start"
         style={{
-          backgroundImage: 'url("/public/AboutBG1.png")',
+          backgroundImage: 'url("/AboutBG1.png")',
           backgroundSize: "cover",
         }}
       >
         <div className="absolute left-[-6%] top-0 border-[5px] border-red-600 p-6 w-[40%] h-full">
-          <img src="/public/AboutUncle1.png" className="h-full w-full " />
+          <img src="/AboutUncle1.png" className="h-full w-full " />
         </div>
         <div className="w-[65%]">
           <p className="text-[30px] uppercase font-raleway">
@@ -98,10 +98,7 @@ const About = ({ setContactOpen }) => {
           </div>
         </div>
         <div className=" grayscale top-0 w-[60%] h-[600px] overflow-hidden">
-          <img
-            src="/public/About2.jpeg"
-            className="h-full w-full object-cover"
-          />
+          <img src="/About2.jpeg" className="h-full w-full object-cover" />
         </div>
       </div>
     </div>

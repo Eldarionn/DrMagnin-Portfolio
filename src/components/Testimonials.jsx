@@ -18,7 +18,7 @@ const Testimonials = ({ setContactOpen }) => {
       <div className="grid grid-cols-4 gap-5 px-[5%]  py-10 h-[350px]">
         <div className="relative h-[350px] w-full overflow-hidden grayscale">
           <img
-            src="/public/testimonials1.png"
+            src="/testimonials1.png"
             className="w-full h-full object-cover"
           />
           <p className="text-[20px] w-full px-[10%] text-center leading-[27px] text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -31,7 +31,7 @@ const Testimonials = ({ setContactOpen }) => {
         </div>
         <div className=" relative h-[350px] w-full overflow-hidden grayscale">
           <img
-            src="/public/testimonials2.png"
+            src="/testimonials2.png"
             className="w-full h-full object-cover"
           />
           <p className="text-[20px] w-full px-[10%] text-center leading-[27px] text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -44,7 +44,7 @@ const Testimonials = ({ setContactOpen }) => {
         </div>
         <div className="relative h-[350px] w-full overflow-hidden grayscale">
           <img
-            src="/public/testimonials3.png"
+            src="/testimonials3.png"
             className="w-full h-full object-cover"
           />
           <p className="text-[20px] w-full px-[10%] text-center leading-[27px] text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -57,7 +57,7 @@ const Testimonials = ({ setContactOpen }) => {
         </div>
         <div className="relative h-[350px] w-full overflow-hidden grayscale">
           <img
-            src="/public/testimonials4.png"
+            src="/testimonials4.png"
             className="w-full h-full object-cover"
           />
           <p className="text-[20px] w-full px-[10%] text-center leading-[27px] text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
