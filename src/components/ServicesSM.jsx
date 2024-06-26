@@ -25,7 +25,7 @@ const ServicesSM = () => {
             />
 
             <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
-              <img src="/public/Polygon 1 (2).svg" className="rotate-180" />
+              <img src="/Polygon 1 (2).svg" className="rotate-180" />
               <Link to={"regard"}>
                 <p className="flex flex-col">
                   <span className="uppercase font-[600] underline pb-[3%]">
@@ -40,7 +40,7 @@ const ServicesSM = () => {
               </Link>
 
               <img
-                src="/public/Polygon 1 (2).svg"
+                src="/Polygon 1 (2).svg"
                 alt=""
                 onClick={() => setservice2(true)}
               />
@@ -60,7 +60,7 @@ const ServicesSM = () => {
 
             <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
               <img
-                src="/public/Polygon 1 (2).svg"
+                src="/Polygon 1 (2).svg"
                 className="rotate-180"
                 onClick={() => setservice2(false)}
               />
@@ -79,7 +79,7 @@ const ServicesSM = () => {
               </Link>
 
               <img
-                src="/public/Polygon 1 (2).svg"
+                src="/Polygon 1 (2).svg"
                 alt=""
                 onClick={() => setservice3(true)}
               />
@@ -100,7 +100,7 @@ const ServicesSM = () => {
 
             <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
               <img
-                src="/public/Polygon 1 (2).svg"
+                src="/Polygon 1 (2).svg"
                 className="rotate-180"
                 onClick={() => setservice3(false)}
               />
@@ -119,7 +119,7 @@ const ServicesSM = () => {
               </Link>
 
               <img
-                src="/public/Polygon 1 (2).svg"
+                src="/Polygon 1 (2).svg"
                 alt=""
                 onClick={() => setservice4(true)}
               />
@@ -140,7 +140,7 @@ const ServicesSM = () => {
 
             <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
               <img
-                src="/public/Polygon 1 (2).svg"
+                src="/Polygon 1 (2).svg"
                 className="rotate-180"
                 onClick={() => setservice4(false)}
               />
@@ -160,7 +160,7 @@ const ServicesSM = () => {
               </Link>
 
               <img
-                src="/public/Polygon 1 (2).svg"
+                src="/Polygon 1 (2).svg"
                 alt=""
                 onClick={() => setservice5(true)}
               />
@@ -181,7 +181,7 @@ const ServicesSM = () => {
 
             <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
               <img
-                src="/public/Polygon 1 (2).svg"
+                src="/Polygon 1 (2).svg"
                 className="rotate-180"
                 onClick={() => setservice5(false)}
               />
@@ -200,7 +200,7 @@ const ServicesSM = () => {
                 </p>
               </Link>
 
-              <img src="/public/Polygon 1 (2).svg" alt="" />
+              <img src="/Polygon 1 (2).svg" alt="" />
             </div>
           </div>
         </div>
