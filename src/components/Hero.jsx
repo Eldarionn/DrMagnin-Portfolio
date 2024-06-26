@@ -1,5 +1,7 @@
 import React from "react";
 
+import BG from "../../public/HeroBG.jpeg";
+
 const Hero = ({ setContactOpen }) => {
   return (
     <div className="grid grid-cols-2 h-screen overflow-hidden">
@@ -18,7 +20,7 @@ const Hero = ({ setContactOpen }) => {
         </div>
       </div>
       <div className="relative w-full overflow-hidden">
-        <img src="/public/HeroBG.jpeg" alt="bg" />
+        <img src={BG} alt="bg" />
         <p className="bg-black text-white px-4 py-3 rotate-90 absolute right-[-5%] top-1/2">
           Genève, Suisse
         </p>
