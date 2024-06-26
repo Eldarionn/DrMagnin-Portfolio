@@ -1,6 +1,6 @@
 import React from "react";
 
-const Testimonials = () => {
+const Testimonials = ({ setContactOpen }) => {
   return (
     <div id="testimonials" className="pt-[15%] px-[2%] z-10">
       <div className="w-[60%] mx-auto p-10 text-center leading-[50px] border-[5px] border-red-600">
@@ -70,7 +70,10 @@ const Testimonials = () => {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <button className="p-3 bg-black text-white uppercase my-[10%] ">
+        <button
+          onClick={() => setContactOpen(true)}
+          className="p-3 bg-black text-white uppercase my-[10%] "
+        >
           consultation
         </button>
       </div>

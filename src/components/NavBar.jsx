@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavBar = () => {
+const NavBar = ({ setContactOpen }) => {
   // Function to handle smooth scrolling
   const scrollToSection = (id) => {
     const section = document.querySelector(id);
@@ -20,7 +20,7 @@ const NavBar = () => {
           <li>
             <button
               onClick={() => scrollToSection("#about")}
-              className="focus:outline-none"
+              className="focus:outline-none uppercase"
             >
               à propos
             </button>
@@ -28,7 +28,7 @@ const NavBar = () => {
           <li>
             <button
               onClick={() => scrollToSection("#services")}
-              className="focus:outline-none"
+              className="focus:outline-none uppercase"
             >
               services
             </button>
@@ -36,7 +36,7 @@ const NavBar = () => {
           <li>
             <button
               onClick={() => scrollToSection("#testimonials")}
-              className="focus:outline-none"
+              className="focus:outline-none uppercase"
             >
               témoignages
             </button>
@@ -44,12 +44,15 @@ const NavBar = () => {
           <li>
             <button
               onClick={() => scrollToSection("#clinic")}
-              className="focus:outline-none"
+              className="focus:outline-none uppercase"
             >
               clinique
             </button>
           </li>
-          <button className="bg-black rounded-md text-white font-[400] text-[20px] uppercase p-3">
+          <button
+            onClick={() => setContactOpen(true)}
+            className="bg-black rounded-md text-white font-[400] text-[20px] uppercase p-3"
+          >
             Consultation
           </button>
         </ul>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const About = () => {
+const About = ({ setContactOpen }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -51,7 +51,10 @@ const About = () => {
             </span>
           </p>
           <div className="w-[60%] flex justify-between">
-            <button className="border-[3px] border-black px-2 my-6 py-1 rounded-[5px] uppercase">
+            <button
+              onClick={() => setContactOpen(true)}
+              className="border-[3px] border-black px-2 my-6 py-1 rounded-[5px] uppercase"
+            >
               consultation
             </button>
             <img
