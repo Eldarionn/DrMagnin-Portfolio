@@ -7,7 +7,7 @@ import Testimonials from "../components/Testimonials";
 import Clinic from "../components/Clinic";
 import Instagram from "../components/Instagram";
 import { RxCross1 } from "react-icons/rx";
-
+import ServicesSM from "../components/ServicesSM";
 const Home = () => {
   const [contactOpen, setContactOpen] = useState(false);
 
@@ -22,7 +22,7 @@ const Home = () => {
           <RxCross1 size={40} onClick={() => setContactOpen(false)} />
         </div>
         <div>
-          <img src="/public/logo.svg" className="mx-auto" alt="Logo" />
+          <img src="/logo.svg" className="mx-auto" alt="Logo" />
           <h3 className="uppercase text-[25px] py-12">Contactez Nous</h3>
         </div>
         <div className="grid grid-cols-2 gap-8 w-[80%]">
@@ -62,11 +62,15 @@ const Home = () => {
             />
           </div>
         </div>
+        <button className="bg-black text-white py-3 px-4 rounded-[5px] mt-12">
+          ENVOYER
+        </button>
       </div>
       <NavBar setContactOpen={setContactOpen} />
       <Hero setContactOpen={setContactOpen} />
       <About setContactOpen={setContactOpen} />
       <Services />
+      <ServicesSM />
       <Testimonials setContactOpen={setContactOpen} />
       <Clinic />
       <Instagram />

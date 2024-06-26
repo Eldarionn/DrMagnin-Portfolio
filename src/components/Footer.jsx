@@ -5,39 +5,47 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="flex bg-[#A0A0A0] ">
-      <div className="w-[50%] py-[2%]">
-        <p className="text-[35px] text-white mx-[2%] pt-24">
+    <div className="flex flex-col lg:flex-row bg-[#A0A0A0] ">
+      <div className="w-full lg:w-[50%] py-[2%]">
+        <p className="text-[20px] md:text-[27px] text-center lg:text-start leading-[27px] lg:text-[35px] text-white mx-[2%] pt-24">
           “Learn the rules like a pro so you can break them like an artist.”
         </p>
         <img
-          src="/public/Footer.png"
-          className=" h-auto pt-24 border-[5px] border-red-600 mx-[2%] mt-24"
+          src="/Footer.png"
+          className=" h-auto pt-24 lg:border-[5px] border-red-600 mx-[2%] md:mt-12 lg:mt-24"
         />
       </div>
-      <div className="text-white pb-[5%] pl-[5%] items-end flex gap-3">
+      <div className="hidden text-white pb-[5%] pl-[5%] items-end lg:flex gap-3">
         <FaLocationDot size={35} />
         <FaInstagram size={35} />
         <FaFacebookSquare size={35} />
         <IoLogoWhatsapp size={35} />
       </div>
-      <div className="text-white pb-[5%] ml-[2%] w-[15%]  items-end text-[25px] flex gap-3">
-        <ul className="space-y-[15px] border-l px-[15%] border-white">
-          <li>Facelift</li>
-          <li>Les Levres </li>
-          <li>Le Regard </li>
-          <li>Coup D’eclat </li>
-          <li>Les Hommes</li>
-        </ul>
+      <div className="w-full px-[20%] lg:px-0 lg:w-[30%] items-end flex justify-center pb-[5%] ">
+        <div className="text-white  ml-[2%] w-full  items-end text-[10px] md:text-[17px] lg:text-[25px] flex gap-3">
+          <ul className="space-y-[15px] border-l px-[15%] border-white">
+            <li>Facelift</li>
+            <li>Les Levres </li>
+            <li>Le Regard </li>
+            <li>Coup D’eclat </li>
+            <li>Les Hommes</li>
+          </ul>
+        </div>
+        <div className="text-white  ml-[2%] w-full  items-end text-[10px] md:text-[17px] lg:text-[25px] flex gap-3">
+          <ul className="space-y-[15px] border-l px-[15%] border-white">
+            <li>A Propos </li>
+            <li>Services </li>
+            <li>Témoignages </li>
+            <li>Clinique </li>
+            <li> </li>
+          </ul>
+        </div>
       </div>
-      <div className="text-white pb-[5%] ml-[2%]  w-[15%] items-end text-[25px] flex gap-3">
-        <ul className="space-y-[15px] border-l px-[15%] border-white">
-          <li>A Propos </li>
-          <li>Services </li>
-          <li>Témoignages </li>
-          <li>Clinique </li>
-          <li> </li>
-        </ul>
+      <div className="flex text-white py-[10%] pl-[5%] items-end justify-center lg:hidden gap-3">
+        <FaLocationDot size={20} />
+        <FaInstagram size={20} />
+        <FaFacebookSquare size={20} />
+        <IoLogoWhatsapp size={20} />
       </div>
     </div>
   );

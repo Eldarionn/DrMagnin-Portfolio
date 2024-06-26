@@ -4,36 +4,39 @@ const About = ({ setContactOpen }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div id="about" className="relative py-[15%] px-[2%] z-10 overflow-hidden">
-      <div className=" w-[70%] mx-auto p-10 text-center leading-[50px] border-[5px] border-red-600">
-        <p className="text-[50px]">
+    <div
+      id="about"
+      className="relative py-[15%] lg:px-[2%] z-10 overflow-hidden"
+    >
+      <div className="w-full lg:w-[70%] mx-auto p-10 text-center leading-[25px] lg:leading-[50px] lg:border-[5px] border-red-600">
+        <p className="text-[20px] md:text-[30px] lg:text-[50px]">
           Que vous souhaitiez retrouver l'éclat de votre peau, redéfinir vos
           contours ou raviver vos émotions...
         </p>
-        <p className="text-[25px] font-[300]">
+        <p className="text-[10px] md:text-[18px] leading-[20px] lg:leading-[50px] py-3 md:py-5 lg:0 lg:text-[25px] font-[300]">
           à travers des techniques avancées, notre clinique est l'endroit où
           l'art et la science se rejoignent pour vous offrir des résultats
           exceptionnels.
         </p>
       </div>
       <div
-        className="relative z-30 w-[90%] my-6 mx-auto p-10  leading-[50px] flex justify-end text-start"
+        className="relative z-30 lg:w-[90%] my-6 mx-auto p-10  leading-[50px] flex justify-end text-start"
         style={{
           backgroundImage: 'url("/AboutBG1.png")',
           backgroundSize: "cover",
         }}
       >
-        <div className="absolute left-[-6%] top-0 border-[5px] border-red-600 p-6 w-[40%] h-full">
-          <img src="/AboutUncle1.png" className="h-full w-full " />
+        <div className="absolute left-0 lg:left-[-6%] top-0 lg:border-[5px] border-red-600 lg:p-6 w-full h-auto lg:w-[40%] lg:h-full">
+          <img src="/AboutUncle1.png" className="h-full w-full z-10" />
         </div>
-        <div className="w-[65%]">
-          <p className="text-[30px] uppercase font-raleway">
+        <div className="mt-[90%] md:mt-[50%] lg:mt-0 lg:w-[65%] z-20">
+          <p className="leading-[23px] md:leading-[40px] lg:leading-[45px] text-[20px] md:text-[25px] lg:text-[30px] uppercase font-raleway">
             Rencontrez le Médecin Esthétique Dr Dominique Magnin 
           </p>
-          <p className="text-[20px] uppercase font-raleway">
+          <p className="text-[15px] lg:text-[20px] leading-[25px] md:leading-[30px] lg:leading-[35px] py-4 lg:py-0 uppercase font-raleway">
             Learn the rules like a pro so that you can break them like an artist
           </p>
-          <p className="text-[18px] leading-[30px] font-raleway">
+          <p className="text-[10px] md:text-[13px] lg:text-[18px] leading-[20px] md:leading-[25px] lg:leading-[30px] font-raleway">
             J’ai cherché un terme qui traduirait au plus près ma vision
             personnelle de la Beauté. <br /> L’analogie avec l’architecture
             s’est imposée, car nous avons la même approche : harmonie des
@@ -50,17 +53,17 @@ const About = ({ setContactOpen }) => {
               sans déséquilibrer.
             </span>
           </p>
-          <div className="w-[60%] flex justify-between">
+          <div className="w-full lg:w-[60%] flex justify-between">
             <button
               onClick={() => setContactOpen(true)}
-              className="border-[3px] border-black px-2 my-6 py-1 rounded-[5px] uppercase"
+              className="border-[3px] border-black lg:px-2 my-6 px-1 text-[15px] lg:py-1 rounded-[5px] uppercase"
             >
               consultation
             </button>
             <img
               src="/Polygon 1 (2).svg"
               alt=""
-              className="cursor-pointer"
+              className="cursor-pointer "
               onClick={() => setOpen(true)}
             />
           </div>
