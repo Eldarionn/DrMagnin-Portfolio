@@ -2,48 +2,49 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Service2 = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  useEffect(() => {
+    // Scroll to top when the component mounts or updates
+    scrollToTop();
+  }, []);
 
-      const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      };
-      useEffect(() => {
-        // Scroll to top when the component mounts or updates
-        scrollToTop();
-      }, []);
-      
   return (
     <>
-      <div className=" max-h-[900px] grid grid-cols-2 overflow-hidden">
-        <div className="relative h-full w-full overflow-hidden grayscale">
+      <div className=" lg:max-h-[900px] grid lg:grid-cols-2 lg:o`verflow-hidden">
+        <div className="relative h-full w-full lg:overflow-hidden grayscale">
           <img
-            src="/public/servicePage2.jpeg"
+            src="/servicePage2.jpeg"
             className="h-full w-full object-cover"
           />
           <Link to={"/"}>
             <img
-              src="/public/Polygon 1 (2).svg"
-              className="absolute left-[3%] top-1/2 rotate-180"
+              src="/Polygon 1 (2).svg"
+              className="absolute left-[3%] top-[10%] lg:top-1/2 rotate-180"
             />
           </Link>
         </div>
         <div className="px-[5%] py-[7%]">
-          <div className="flex gap-[10%] items-center">
-            <h1 className=" uppercase text-[50px]">Coup D’eclat</h1>
+          <div className="flex flex-col lg:flex-row gap-[10%] items-start lg:items-center">
+            <h1 className=" uppercase text-[20px] md:text-[30px] lg:text-[50px]">
+              Coup D’eclat
+            </h1>
             <div className="">
-              <button className="border-[3px] border-black text-[20px] uppercase py-3 px-4">
+              <button className="border-[3px] border-black text-[15px] my-4 lg:my-0 lg:text-[20px] uppercase py-3 px-4">
                 consultation
               </button>
             </div>
           </div>
 
           <div>
-            <p className="text-[30px] py-5 leading-[33px] uppercase">
+            <p className="text-[20px] md:text-[25px] lg:text-[30px] py-5 leading-[33px] uppercase">
               Révélez un Teint Radieux, Sublimez Votre Peau
             </p>
-            <p className="text-[18px] text-justify leading-[30px]">
+            <p className="text-[10px] lg:text-[18px] text-justify leading-[30px]">
               Votre peau peut perdre son éclat en raison de facteurs
               environnementaux et d'un style de vie qui influent sur son état
               (exposition au soleil, tabac, pollution). Avec le temps, la peau
@@ -53,11 +54,11 @@ const Service2 = () => {
             </p>
           </div>
           <div>
-            <p className="text-[30px] py-5 mt-5 uppercase">
+            <p className="text-[15px] md:text-[20px] lg:text-[30px] py-5 mt-5 uppercase">
               Les Avancées dans les Techniques de Comblement Offrent de
               Nouvelles Possibilités:
             </p>
-            <p className="text-[18px] text-justify leading-[30px]">
+            <p className="text-[10px] lg:text-[18px] text-justify leading-[30px]">
               Redonnez de l'hydratation en profondeur à votre peau grâce à nos
               solutions de skinboosters, dont Restylane Eyelight Genève et
               Juvederm Volite. Ces traitements rendent la peau plus douce,
@@ -71,13 +72,13 @@ const Service2 = () => {
           </div>
         </div>
       </div>
-      <div className=" grid grid-cols-2">
-        <div className="bg-custom-gradient px-[10%] flex flex-col gap-[5%] items-center justify-center">
+      <div className=" grid lg:grid-cols-2">
+        <div className="bg-custom-gradient px-[5%] lg:px-[10%] flex flex-col gap-[5%] items-center justify-center">
           <div>
-            <p className="text-[25px] leading-[33px] text-center">
+            <p className="text-[15px] md:text-[20px] lg:text-[25px] leading-[33px] text-center">
               La Mésothérapie : Votre Secret pour une Peau Radieuse et Jeune
             </p>
-            <p className="text-[18px] leading-[30px] text-justify p-5">
+            <p className="text-[10px] lg:text-[18px] leading-[30px] text-justify p-5">
               Découvrez le secret des célébrités et de l'industrie pour une peau
               belle et rayonnante. La mésothérapie, souvent recommandée,
               améliore l'éclat. Ce traitement novateur combine des
@@ -90,10 +91,10 @@ const Service2 = () => {
           </div>
 
           <div>
-            <p className="text-[25px] leading-[33px] text-center">
+            <p className="text-[15px] md:text-[20px] lg:text-[25px] leading-[33px] text-center">
               Révélez un Teint Éclatant avec nos Traitements de Peeling
             </p>
-            <p className="text-[18px] leading-[30px] text-justify p-5">
+            <p className="text-[10px] lg:text-[18px] leading-[30px] text-justify p-5">
               Optez pour notre service de peelings pour obtenir une peau
               éclatante et renouvelée. Les peelings doux exfolient en douceur
               les couches superficielles de la peau, dévoilant un teint plus
@@ -106,7 +107,7 @@ const Service2 = () => {
             </p>
           </div>
         </div>
-        <img src="/public/servicePage22.png" alt="" />
+        <img src="/servicePage22.png" alt="" />
       </div>
     </>
   );

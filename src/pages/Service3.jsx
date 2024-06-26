@@ -15,34 +15,33 @@ const Service3 = () => {
 
   return (
     <>
-      <div className=" max-h-[900px] grid grid-cols-2 overflow-hidden">
-        <div className="relative h-full w-full overflow-hidden grayscale">
-          <img
-            src="/public/servicePage3.png"
-            className="h-full w-full object-cover"
-          />
+      <div className=" lg:max-h-[900px] grid lg:grid-cols-2 lg:overflow-hidden">
+        <div className="relative h-full w-full lg:overflow-hidden grayscale">
+          <img src="/servicePage3.png" className="h-full w-full object-cover" />
           <Link to={"/"}>
             <img
-              src="/public/Polygon 1 (2).svg"
-              className="absolute left-[3%] top-1/2 rotate-180"
+              src="/Polygon 1 (2).svg"
+              className="absolute left-[3%] top-[10%] lg:top-1/2 rotate-180"
             />
           </Link>
         </div>
         <div className="px-[5%] py-[7%]">
-          <div className="flex gap-[10%] items-center">
-            <h1 className=" uppercase text-[50px]">Facelift</h1>
+          <div className="flex flex-col lg:flex-row gap-[10%] items-start lg:items-center">
+            <h1 className=" uppercase text-[20px] md:text-[30px] lg:text-[50px]">
+              Facelift
+            </h1>
             <div className="">
-              <button className="border-[3px] border-black text-[20px] uppercase py-3 px-4">
+              <button className="border-[3px] border-black text-[15px] lg:text-[20px] uppercase py-3 px-4">
                 consultation
               </button>
             </div>
           </div>
 
           <div>
-            <p className="text-[30px] py-5 leading-[33px] uppercase">
+            <p className="text-[20px] md:text-[25px] lg:text-[30px] py-5 leading-[33px] uppercase">
               L'Art de la Beauté Naturelle & Idéale
             </p>
-            <p className="text-[18px] text-justify leading-[30px]">
+            <p className="text-[10px] lg:text-[18px] text-justify leading-[30px]">
               Un rajeunissement complet du visage et de l’ovale peut être obtenu
               à l’aide de méthodes sures, non invasives, sans chirurgie pour un
               résultat naturel, rafraichi. Une apparence jeune, liftée est
@@ -55,10 +54,10 @@ const Service3 = () => {
             </p>
           </div>
           <div>
-            <p className="text-[30px] py-5 mt-5 uppercase">
+            <p className="text-[15px] md:text-[20px] lg:text-[30px] py-5 mt-5 uppercase">
               Réjuvénation Immédiate du Visage
             </p>
-            <p className="text-[18px] text-justify leading-[30px]">
+            <p className="text-[10px] lg:text-[18px] text-justify leading-[30px]">
               Les caractéristiques de jeunesse sont rétablies: formes
               redistribuées, peau plus lumineuse. Avec une infime quantité de
               produit injectée dans des points de redressement personnalisés
@@ -78,12 +77,12 @@ const Service3 = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className=" w-[50%] px-[5%] flex flex-col gap-[5%] items-center justify-center py-[5%]">
-          <p className="text-[30px] leading-[33px] text-center">
+        <div className="w-full lg:w-[50%] px-[5%] flex flex-col gap-[5%] items-center justify-center py-3 lg:py-[5%]">
+          <p className="text-[20px] md:text-[25px] lg:text-[30px] leading-[33px] text-center">
             Produits Haut de Gamme des Résultats Exceptionnels 
           </p>
-          <div className="mt-20 flex gap-[10%]">
-            <p className="text-[18px] leading-[30px] text-justify  p-5">
+          <div className="mt-4 lg:mt-20 flex gap-[10%]">
+            <p className="text-[10px] lg:text-[18px] leading-[30px] text-justify  px-5">
               Juvederm Volux, Voluma, 
               <br /> Volift, Volbella  
               <br /> HarmoniCA  
@@ -95,7 +94,7 @@ const Service3 = () => {
 
             {/* <span className="border-l border-black h-[80%]"></span> */}
 
-            <p className="text-[18px] leading-[30px] border-l pl-[20%] border-black text-justify  p-5">
+            <p className="text-[10px] lg:text-[18px] leading-[30px] border-l pl-[20%] border-black text-justify  px-5">
               POUR UNE BEAUTE <br /> INTEGRALE:{" "}
               <span className="font-raleway">
                 <br /> • COU 
@@ -107,13 +106,13 @@ const Service3 = () => {
         </div>
       </div>
 
-      <div className=" grid grid-cols-2">
-        <div className="bg-[#A0A0A0] px-[10%] text-white flex flex-col gap-[5%] items-center justify-center py-[15%]">
+      <div className=" grid lg:grid-cols-2">
+        <div className="bg-[#A0A0A0] px-[5%] lg:px-[10%] text-white flex flex-col gap-[5%] items-center justify-center py-[15%]">
           <div>
-            <p className="text-[30px] leading-[33px] text-center uppercase">
+            <p className="text-[20px] md:text-[25px] lg:text-[30px] leading-[33px] text-center uppercase">
               botox
             </p>
-            <p className="text-[18px] leading-[30px] text-center p-5">
+            <p className="text-[10px] lg:text-[18px] leading-[30px] text-center p-5">
               Dr. Dominique Magnin considère le visage dans sa globalité
               dynamique, allant au-delà des rides. Votre visage ne sera pas
               figé, mais dynamisé avec tonicité et jeunesse. En plus de procurer
@@ -128,7 +127,7 @@ const Service3 = () => {
             </p>
           </div>
         </div>
-        <div className="h-full w-full overflow-hidden">
+        <div className="h-[450px] lg:h-full w-full overflow-hidden">
           <img
             src="/public/servicePage33.png"
             className="grayscale h-full w-full object-cover"

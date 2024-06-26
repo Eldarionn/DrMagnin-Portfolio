@@ -15,17 +15,18 @@ const ServicesSM = () => {
       </h3>
       <div className="h-[550px] relative py-8">
         <div className={`absolute top-0 duration-700 right-0 h-full w-full`}>
-          <Link>
-            <div
-              className="relative h-full w-full overflow-hidden grayscale cursor-pointer group
-"
-            >
-              <img
-                src="/service1.png"
-                className="w-full h-full object-cover duration-700"
-              />
-              <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
-                <img src="/public/Polygon 1 (2).svg" className="rotate-180" />
+          <div
+            className="relative h-full w-full overflow-hidden grayscale cursor-pointer group
+              "
+          >
+            <img
+              src="/service1.png"
+              className="w-full h-full object-cover duration-700"
+            />
+
+            <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
+              <img src="/public/Polygon 1 (2).svg" className="rotate-180" />
+              <Link to={"regard"}>
                 <p className="flex flex-col">
                   <span className="uppercase font-[600] underline pb-[3%]">
                     Le Regard
@@ -36,35 +37,34 @@ const ServicesSM = () => {
                     en savoir plus
                   </span>
                 </p>
+              </Link>
 
-                <img
-                  src="/public/Polygon 1 (2).svg"
-                  alt=""
-                  onClick={() => setservice2(true)}
-                />
-              </div>
+              <img
+                src="/public/Polygon 1 (2).svg"
+                alt=""
+                onClick={() => setservice2(true)}
+              />
             </div>
-          </Link>
+          </div>
         </div>
         <div
           className={`absolute top-0 duration-700 ${
             service2 === false ? "right-[-400px]" : "right-0"
           } h-full w-full`}
         >
-          <Link>
-            <div className="relative h-full w-full overflow-hidden grayscale  cursor-pointer">
+          <div className="relative h-full w-full overflow-hidden grayscale  cursor-pointer">
+            <img
+              src="/service2.jpeg"
+              className="w-full h-full object-coverduration-700"
+            />
+
+            <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
               <img
-                src="/service2.jpeg"
-                className="w-full h-full object-coverduration-700"
+                src="/public/Polygon 1 (2).svg"
+                className="rotate-180"
+                onClick={() => setservice2(false)}
               />
-
-              <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
-                <img
-                  src="/public/Polygon 1 (2).svg"
-                  className="rotate-180"
-                  onClick={() => setservice2(false)}
-                />
-
+              <Link to={"declat"}>
                 <p className="flex flex-col">
                   <span className="uppercase font-[600] underline pb-[3%]">
                     Coup D’eclat
@@ -76,15 +76,15 @@ const ServicesSM = () => {
                     en savoir plus
                   </span>
                 </p>
+              </Link>
 
-                <img
-                  src="/public/Polygon 1 (2).svg"
-                  alt=""
-                  onClick={() => setservice3(true)}
-                />
-              </div>
+              <img
+                src="/public/Polygon 1 (2).svg"
+                alt=""
+                onClick={() => setservice3(true)}
+              />
             </div>
-          </Link>
+          </div>
         </div>
 
         <div
@@ -92,20 +92,20 @@ const ServicesSM = () => {
             service3 === false ? "right-[-400px]" : "right-0"
           } h-full w-full`}
         >
-          <Link>
-            <div className="relative h-full w-full overflow-hidden grayscale  cursor-pointer group">
+          <div className="relative h-full w-full overflow-hidden grayscale  cursor-pointer group">
+            <img
+              src="/service3.png"
+              className="w-full h-full object-cover duration-700"
+            />
+
+            <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
               <img
-                src="/service3.png"
-                className="w-full h-full object-cover duration-700"
+                src="/public/Polygon 1 (2).svg"
+                className="rotate-180"
+                onClick={() => setservice3(false)}
               />
 
-              <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
-                <img
-                  src="/public/Polygon 1 (2).svg"
-                  className="rotate-180"
-                  onClick={() => setservice3(false)}
-                />
-
+              <Link to={"facelift"}>
                 <p className="flex flex-col">
                   <span className="uppercase font-[600] underline pb-[3%]">
                     Facelift
@@ -116,15 +116,15 @@ const ServicesSM = () => {
                     en savoir plus
                   </span>
                 </p>
+              </Link>
 
-                <img
-                  src="/public/Polygon 1 (2).svg"
-                  alt=""
-                  onClick={() => setservice4(true)}
-                />
-              </div>
+              <img
+                src="/public/Polygon 1 (2).svg"
+                alt=""
+                onClick={() => setservice4(true)}
+              />
             </div>
-          </Link>
+          </div>
         </div>
 
         <div
@@ -132,20 +132,20 @@ const ServicesSM = () => {
             service4 === false ? "right-[-400px]" : "right-0"
           } h-full w-full`}
         >
-          <Link>
-            <div className="relative h-full w-full overflow-hidden grayscale cursor-pointer group">
+          <div className="relative h-full w-full overflow-hidden grayscale cursor-pointer group">
+            <img
+              src="/service4.png"
+              className="w-full h-full object-cover duration-700"
+            />
+
+            <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
               <img
-                src="/service4.png"
-                className="w-full h-full object-cover duration-700"
+                src="/public/Polygon 1 (2).svg"
+                className="rotate-180"
+                onClick={() => setservice4(false)}
               />
 
-              <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
-                <img
-                  src="/public/Polygon 1 (2).svg"
-                  className="rotate-180"
-                  onClick={() => setservice4(false)}
-                />
-
+              <Link to={"levres"}>
                 <p className="flex flex-col">
                   <span className="uppercase font-[600] underline pb-[3%]">
                     Les Levres
@@ -157,15 +157,15 @@ const ServicesSM = () => {
                     en savoir plus
                   </span>
                 </p>
+              </Link>
 
-                <img
-                  src="/public/Polygon 1 (2).svg"
-                  alt=""
-                  onClick={() => setservice5(true)}
-                />
-              </div>
+              <img
+                src="/public/Polygon 1 (2).svg"
+                alt=""
+                onClick={() => setservice5(true)}
+              />
             </div>
-          </Link>
+          </div>
         </div>
 
         <div
@@ -173,20 +173,20 @@ const ServicesSM = () => {
             service5 === false ? "right-[-400px]" : "right-0"
           } h-full w-full`}
         >
-          <Link>
-            <div className="relative h-full w-full overflow-hidden grayscale  cursor-pointer group">
+          <div className="relative h-full w-full overflow-hidden grayscale  cursor-pointer group">
+            <img
+              src="/service5.png"
+              className="w-full h-full object-cover transition-transform duration-700"
+            />
+
+            <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
               <img
-                src="/service5.png"
-                className="w-full h-full object-cover transition-transform duration-700"
+                src="/public/Polygon 1 (2).svg"
+                className="rotate-180"
+                onClick={() => setservice5(false)}
               />
 
-              <div className="flex absolute  text-center bottom-[5%] text-white text-[17px]  w-full h-full p-[5%]   items-end justify-center">
-                <img
-                  src="/public/Polygon 1 (2).svg"
-                  className="rotate-180"
-                  onClick={() => setservice5(false)}
-                />
-
+              <Link to={"hommes"}>
                 <p className="flex flex-col">
                   <span className="uppercase font-[600] underline pb-[3%]">
                     Les Hommes
@@ -198,11 +198,11 @@ const ServicesSM = () => {
                     en savoir plus
                   </span>
                 </p>
+              </Link>
 
-                <img src="/public/Polygon 1 (2).svg" alt="" />
-              </div>
+              <img src="/public/Polygon 1 (2).svg" alt="" />
             </div>
-          </Link>
+          </div>
         </div>
       </div>
     </div>
