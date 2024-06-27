@@ -8,7 +8,7 @@ const Instagram = () => {
       </h1>
       <img
         src="/Instagram.png"
-        className="
+        className=" w-full h-auto
       py-[6%] hidden md:block"
       />
       <img

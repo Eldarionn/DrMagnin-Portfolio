@@ -21,7 +21,7 @@ const ServicesSM = () => {
         Magnin apporte une approche novatrice à la Médecine Esthétique.
       </p>
       <div className="h-[550px] relative ">
-        <div className={`absolute top-0 duration-700 right-0 h-full w-full`}>
+        <div className={`absolute top-0 duration-700 right-0 h-full w-screen`}>
           <div
             className="relative h-full w-full  overflow-hidden grayscale cursor-pointer group
               "
@@ -56,7 +56,7 @@ const ServicesSM = () => {
         <div
           className={`absolute top-0 duration-700 ${
             service2 === false ? "right-[-400px]" : "right-0"
-          } h-full w-full`}
+          } h-full w-screen`}
         >
           <div
             className="relative h-full w-full  overflow-hidden grayscale cursor-pointer group
@@ -95,7 +95,7 @@ const ServicesSM = () => {
         <div
           className={`absolute top-0 duration-700 ${
             service3 === false ? "right-[-400px]" : "right-0"
-          } h-full w-full`}
+          } h-full w-screen`}
         >
           <div
             className="relative h-full w-full  overflow-hidden grayscale cursor-pointer group
@@ -134,7 +134,7 @@ const ServicesSM = () => {
         <div
           className={`absolute top-0 duration-700 ${
             service4 === false ? "right-[-400px]" : "right-0"
-          } h-full w-full`}
+          } h-full w-screen`}
         >
           <div
             className="relative h-full w-full  overflow-hidden grayscale cursor-pointer group
