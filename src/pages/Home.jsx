@@ -8,6 +8,8 @@ import Clinic from "../components/Clinic";
 import Instagram from "../components/Instagram";
 import { RxCross1 } from "react-icons/rx";
 import ServicesSM from "../components/ServicesSM";
+import TestimonialsSM from "../components/TestimonialSM";
+
 const Home = () => {
   const [contactOpen, setContactOpen] = useState(false);
 
@@ -85,6 +87,7 @@ const Home = () => {
       <Services />
       <ServicesSM />
       <Testimonials setContactOpen={setContactOpen} />
+      <TestimonialsSM setContactOpen={setContactOpen} />
       <Clinic />
       <Instagram />
     </div>

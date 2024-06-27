@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonials = ({ setContactOpen }) => {
   return (
-    <div id="testimonials" className="pt-[15%] px-[2%] z-10">
+    <div id="testimonials" className="hidden lg:block pt-[15%] px-[2%] z-10">
       <div className="w-[60%] mx-auto lg:p-10 text-center leading-[50px] lg:border-[5px] border-red-600">
         <p className="text-[20px] leading-[27px] md:leading-[40px] lg:leading-[65px] md:text-[30px] lg:text-[50px]">
           Prenez le Premier Pas Vers Votre Transformation
@@ -15,7 +15,7 @@ const Testimonials = ({ setContactOpen }) => {
         les sublimer.  Inspiré par l'architecture et guidé par l'émotion, le Dr
         Magnin apporte une approche novatrice à la Médecine Esthétique.
       </p>
-      <div className="hidden lg:grid grid-cols-4 gap-5 px-[5%]  py-10 h-[350px]">
+      <div className="grid grid-cols-4 gap-5 px-[5%]  py-10 h-[350px]">
         <div className="relative h-[350px] w-full overflow-hidden grayscale">
           <img
             src="/testimonials1.png"

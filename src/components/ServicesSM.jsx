@@ -10,10 +10,10 @@ const ServicesSM = () => {
 
   return (
     <div id="services" className="lg:hidden w-screen overflow-hidden">
-      <h3 className="text-[20px] leading-[27px] text-center">
+      <h3 className="text-[20px] leading-[27px] text-center py-8">
         Obtenez des résultats harmonieux et naturels
       </h3>
-      <div className="h-[550px] relative py-8">
+      <div className="h-[550px] relative ">
         <div className={`absolute top-0 duration-700 right-0 h-full w-full`}>
           <div
             className="relative h-full w-full overflow-hidden grayscale cursor-pointer group
