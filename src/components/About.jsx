@@ -74,7 +74,7 @@ const About = ({ setContactOpen }) => {
         className={`absolute w-[90%] my-6 mx-auto bottom-[20%] ${
           open === false ? "left-[3000px]" : "left-0"
         } z-40
-          leading-[50px] h-[600px] flex justify-end duration-700 text-start bg-[#F5F5F5]`}
+          leading-[50px] h-[600px] hidden lg:flex justify-end duration-700 text-start bg-[#F5F5F5]`}
       >
         <div className="w-[40%] px-[3%] flex flex-col justify-between py-[5%]">
           <p className="text-[25px] text-center leading-[30px] uppercase font-raleway">
@@ -102,6 +102,43 @@ const About = ({ setContactOpen }) => {
         </div>
         <div className=" grayscale top-0 w-[60%] h-[600px] overflow-hidden">
           <img src="/About2.jpeg" className="h-full w-full object-cover" />
+        </div>
+      </div>
+
+      {/* small devices tab */}
+      <div
+        className={`absolute w-full  mx-auto top-[22%] ${
+          open === false ? "left-[3000px]" : "left-0"
+        } z-40
+          leading-[50px] h-[600px] lg:hidden justify-end duration-700 text-start bg-[#F5F5F5]`}
+      >
+        <div className="relative grayscale top-0 w-full h-full">
+          <img src="/About2.jpeg" className="h-full w-full object-cover" />
+          <p className="text-[13px] px-[7%] absolute bottom-4 w-[60%] text-center leading-[15px] uppercase font-raleway">
+            Le Dr. Magnin révèle la beauté individuelle avec précision et
+            créativité. Il invite à découvrir la magie d'une beauté sculptée
+            naturellement.
+          </p>
+        </div>
+        <div className=""></div>
+        <div className="w-full px-[13%] bg-white flex flex-col justify-between py-[5%]">
+          <p className="text-[10px] py-8 leading-[15px] text-justify font-raleway">
+            Diplômé en Morpho-esthétique et médecine anti-âge de l'Université
+            Paris 5 en 2009, le Dr. Dominique Magnin, médecin esthétique à
+            Genève, recherche continuellement l'innovation en médecine
+            esthétique. Ses formations prestigieuses incluent le Galderma
+            Aesthetic Academy Masterclass à Zurich en juin 2015 et le Mauricio
+            De Maio Tour, Allergan à Paris en 2016, où il a exploré le potentiel
+            des techniques révolutionnaires MD Codes™. 
+          </p>
+          <div className="h-[40px] w-full flex items-end justify-end ">
+            <img
+              src="/Polygon 1 (1).svg"
+              alt=""
+              className="cursor-pointer"
+              onClick={() => setOpen(false)}
+            />
+          </div>
         </div>
       </div>
     </div>
