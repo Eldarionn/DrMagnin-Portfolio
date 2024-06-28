@@ -9,6 +9,7 @@ import Instagram from "../components/Instagram";
 import { RxCross1 } from "react-icons/rx";
 import ServicesSM from "../components/ServicesSM";
 import TestimonialsSM from "../components/TestimonialSM";
+import NavBarSM from "../components/NavBarSM";
 
 const Home = () => {
   const [contactOpen, setContactOpen] = useState(false);
@@ -81,6 +82,7 @@ const Home = () => {
           ENVOYER
         </button>
       </div>
+      <NavBarSM />
       <NavBar setContactOpen={setContactOpen} />
       <Hero setContactOpen={setContactOpen} />
       <About setContactOpen={setContactOpen} />

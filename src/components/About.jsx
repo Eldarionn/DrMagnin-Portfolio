@@ -26,10 +26,13 @@ const About = ({ setContactOpen }) => {
           backgroundSize: "cover",
         }}
       >
-        <div className="absolute left-0 lg:left-[-6%] top-0 lg:border-[5px] border-red-600 lg:p-6 w-full h-auto lg:w-[40%] lg:h-full">
-          <img src="/AboutUncle1.png" className="h-full w-full z-10" />
+        <div className=" absolute left-0 lg:left-[-6%] top-0 bottom-0 lg:border-[5px] lg:my-auto border-red-600 lg:p-6 w-full lg:w-[40%] h-[600px] lg:h-[800px]">
+          <img
+            src="/AboutUncle1.png"
+            className="h-full w-auto z-10 lg:my-auto"
+          />
         </div>
-        <div className="mt-[90%] md:mt-[50%] lg:mt-0 lg:w-[65%] z-20">
+        <div className="h-[600px] lg:h-[800px] mt-[90%] md:mt-[50%] lg:mt-0 lg:w-[65%] z-20 flex flex-col justify-between lg:py-[8%]">
           <p className="leading-[23px] md:leading-[40px] lg:leading-[45px] text-[20px] md:text-[25px] lg:text-[30px] uppercase font-raleway">
             Rencontrez le Médecin Esthétique Dr Dominique Magnin 
           </p>
@@ -74,7 +77,7 @@ const About = ({ setContactOpen }) => {
         className={`absolute w-[90%] my-6 mx-auto bottom-[20%] ${
           open === false ? "left-[3000px]" : "left-0"
         } z-40
-          leading-[50px] h-[600px] hidden lg:flex justify-end duration-700 text-start bg-[#F5F5F5]`}
+          leading-[50px] h-[600px] lg:h-[2000px] hidden lg:flex justify-end duration-700 text-start bg-[#F5F5F5]`}
       >
         <div className="w-[40%] px-[3%] flex flex-col justify-between py-[5%]">
           <p className="text-[25px] text-center leading-[30px] uppercase font-raleway">
@@ -100,7 +103,7 @@ const About = ({ setContactOpen }) => {
             />
           </div>
         </div>
-        <div className=" grayscale top-0 w-[60%] h-[600px] overflow-hidden">
+        <div className=" grayscale top-0 w-[60%] h-[600px] lg:h-[800px] overflow-hidden">
           <img src="/About2.jpeg" className="h-full w-full object-cover" />
         </div>
       </div>
