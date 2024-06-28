@@ -26,7 +26,7 @@ const About = ({ setContactOpen }) => {
           backgroundSize: "cover",
         }}
       >
-        <div className=" absolute left-0 lg:left-[-6%] top-0 bottom-0 lg:border-[5px] lg:my-auto border-red-600 lg:p-6 w-full lg:w-[40%] h-[600px] lg:h-[800px]">
+        <div className=" absolute left-0 lg:left-[-6%] top-0 bottom-0 lg:border-[5px] lg:my-auto border-red-600 lg:p-6 w-full lg:w-[40%] h-[400px] md:h-[600px] lg:h-[800px]">
           <img
             src="/AboutUncle1.png"
             className="h-full w-auto z-10 lg:my-auto"
