@@ -117,7 +117,7 @@ const Service4 = () => {
         </div>
         <div className="h-[450px] lg:h-full w-full overflow-hidden">
           <img
-            src="/public/servicePage42.png"
+            src="/servicePage42.png"
             className="grayscale h-full w-full object-cover"
           />
         </div>

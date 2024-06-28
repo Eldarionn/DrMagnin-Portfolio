@@ -16,13 +16,10 @@ const Service1 = () => {
   return (
     <div className="lg:h-screen lg:max-h-[900px] grid lg:grid-cols-2">
       <div className="relative h-full w-full lg:overflow-hidden grayscale">
-        <img
-          src="public/servicePage1.png"
-          className="h-full w-full object-cover"
-        />
+        <img src="/servicePage1.png" className="h-full w-full object-cover" />
         <Link to={"/"}>
           <img
-            src="/public/Polygon 1 (2).svg"
+            src="/Polygon 1 (2).svg"
             className="absolute left-[3%] top-[10%] lg:top-1/2 rotate-180"
           />
         </Link>
