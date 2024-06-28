@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const NavBar = ({ setContactOpen }) => {
   // Function to handle smooth scrolling
   const scrollToSection = (id) => {
@@ -13,7 +13,12 @@ const NavBar = ({ setContactOpen }) => {
   };
 
   return (
-    <div className="hidden md:flex bg-white z-50 w-[60%] lg:w-[50%] fixed top-0 right-0 uppercase">
+    <motion.div
+      initial={{ y: -250 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 4, duration: 2 }}
+      className="hidden md:flex bg-white z-50 w-[60%] lg:w-[50%] fixed top-0 right-0 uppercase"
+    >
       <div className="w-full p-6">
         <ul className="flex justify-between w-full items-center text-[9px] lg:text-[18px]">
           <img src="/logo.svg" alt="" className="h-10 w-auto lg:h-auto" />
@@ -57,7 +62,7 @@ const NavBar = ({ setContactOpen }) => {
           </button>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
