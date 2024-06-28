@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import BG from "../../public/HeroBG.jpeg";
+import { SlLocationPin } from "react-icons/sl";
 
 const Hero = ({ setContactOpen }) => {
   return (
@@ -40,8 +41,9 @@ const Hero = ({ setContactOpen }) => {
       </div>
       <div className="relative w-full overflow-hidden">
         <img src={BG} alt="bg" />
-        <p className="bg-black text-white px-4 py-3 rotate-90 absolute right-[-10%] lg:right-[-5%] top-1/2">
+        <p className="bg-black/75 flex items-center gap-2 text-white px-4 py-3 rotate-90 absolute right-[-10%] lg:right-[-5%] top-1/2">
           Genève, Suisse
+          <SlLocationPin className="rotate-180 h-4 w-auto" />
         </p>
       </div>
     </div>
