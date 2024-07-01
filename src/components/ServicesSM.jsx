@@ -9,7 +9,7 @@ const ServicesSM = () => {
   const [service5, setservice5] = useState(false);
 
   return (
-    <div id="services" className="lg:hidden w-screen overflow-hidden">
+    <div id="services" className="md:hidden w-screen overflow-hidden">
       <h3 className="text-[20px] leading-[27px] text-center py-8">
         Obtenez des résultats harmonieux et naturels
       </h3>

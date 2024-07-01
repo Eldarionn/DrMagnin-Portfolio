@@ -42,12 +42,19 @@ const Hero = ({ setContactOpen }) => {
           </button>
         </motion.div>
       </div>
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full  overflow-hidden">
         <img src={BG} alt="bg" />
-        <p className="bg-black/75 flex items-center gap-2 rounded-[0.375rem] text-white px-4 py-3 rotate-[270deg] absolute right-[-10%] lg:right-[-5%] top-1/2">
-          <SlLocationPin className="rotate-0 h-4 w-auto" />
-          Genève, Suisse
-        </p>
+        <div className="rotate-[270deg]  absolute right-[-10%] lg:right-[-7%]  top-1/2">
+          <motion.p
+            initial={{ y: 150 }}
+            animate={{ y: 0 }}
+            transition={{ delay: 4, duration: 2 }}
+            className="bg-black/75 flex items-center gap-2 rounded-[0.375rem] text-white px-4 py-3 "
+          >
+            <SlLocationPin className="rotate-0 h-6 w-auto" />
+            Genève, Suisse
+          </motion.p>
+        </div>
       </div>
     </div>
   );

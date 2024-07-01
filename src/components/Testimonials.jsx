@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonials = ({ setContactOpen }) => {
   return (
-    <div id="testimonials" className="hidden lg:block pt-[15%]  z-10">
+    <div id="testimonials" className="hidden md:block pt-[15%]  z-10">
       <div className="w-[60%] mx-auto lg:p-10 text-center leading-[50px]">
         <p className="text-[20px] leading-[27px] md:leading-[40px] lg:leading-[65px] font-[100] lg:font-[400] md:text-[40px] lg:text-[50px]">
           Prenez le Premier Pas Vers Votre Transformation

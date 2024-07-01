@@ -15,7 +15,7 @@ const NavBarSM = ({ setContactOpen }) => {
   };
 
   return (
-    <div className="lg:hidden relative w-full h-full py-6 px-6">
+    <div className="md:hidden relative w-full h-full py-6 px-6">
       <RxHamburgerMenu size={35} onClick={() => setOpen(true)} />
       <div
         className={`${

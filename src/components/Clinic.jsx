@@ -2,7 +2,7 @@ import React from "react";
 
 const Clinic = () => {
   return (
-    <div id="clinic" className="lg:px-[2%] z-10">
+    <div id="clinic" className="px-[5%] lg:px-[2%] z-10">
       <div
         className="relative w-full lg:w-[90%] my-6 mx-auto p-3 md:p-6 lg:p-10 leading-[30px] md:leading-[35px] lg:leading-[50px] flex justify-end text-start"
         style={{

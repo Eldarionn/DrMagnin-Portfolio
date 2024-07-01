@@ -17,10 +17,10 @@ const NavBar = ({ setContactOpen }) => {
       initial={{ y: -250 }}
       animate={{ y: 0 }}
       transition={{ delay: 4, duration: 2 }}
-      className="hidden md:flex bg-white z-50 w-[60%] lg:w-[50%] fixed top-0 right-0 uppercase"
+      className="hidden md:flex bg-white z-50 w-[50%] fixed top-0 right-0 uppercase"
     >
       <div className="w-full p-6">
-        <ul className="flex justify-between w-full items-center font-raleway text-[13px] lg:text-[18px]">
+        <ul className="flex justify-between w-full items-center font-raleway  md:text-[13px] lg:text-[18px]">
           <img src="/logo.svg" alt="" className="w-[50px] h-auto lg:w-auto" />
           <li>
             <button
