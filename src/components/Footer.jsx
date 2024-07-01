@@ -12,14 +12,38 @@ const Footer = () => {
         </p>
         <img
           src="/Footer.png"
-          className=" h-auto pt-24 lg:border-[5px] border-red-600 mx-[2%] md:mt-12 lg:mt-24"
+          className=" h-auto pt-24  mx-[2%] md:mt-12 lg:mt-24"
         />
       </div>
       <div className="hidden text-white pb-[5%] pl-[5%] items-end lg:flex gap-3">
-        <FaLocationDot size={35} />
-        <FaInstagram size={35} />
-        <FaFacebookSquare size={35} />
-        <IoLogoWhatsapp size={35} />
+        <a
+          href="https://www.google.com/maps"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLocationDot size={35} />
+        </a>
+        <a
+          href="https://www.instagram.com/dr_magnin/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram size={35} />
+        </a>
+        <a
+          href="https://www.facebook.com/dr.magnin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebookSquare size={35} />
+        </a>
+        <a
+          href="https://wa.me/41788087111"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoLogoWhatsapp size={35} />
+        </a>
       </div>
       <div className="w-full px-[20%] lg:px-0 lg:w-[30%] items-end flex justify-center pb-[5%] ">
         <div className="text-white  ml-[2%] w-full  items-end text-[10px] md:text-[17px] lg:text-[25px] flex gap-3">

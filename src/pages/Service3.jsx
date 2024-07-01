@@ -129,7 +129,7 @@ const Service3 = () => {
         </div>
         <div className="h-[450px] lg:h-full w-full overflow-hidden">
           <img
-            src="/public/servicePage33.png"
+            src="/servicePage33.png"
             className="grayscale h-full w-full object-cover"
           />
         </div>

@@ -2,13 +2,13 @@ import React from "react";
 
 const Testimonials = ({ setContactOpen }) => {
   return (
-    <div id="testimonials" className="hidden lg:block pt-[15%] px-[2%] z-10">
-      <div className="w-[60%] mx-auto lg:p-10 text-center leading-[50px] lg:border-[5px] border-red-600">
-        <p className="text-[20px] leading-[27px] md:leading-[40px] lg:leading-[65px] md:text-[30px] lg:text-[50px]">
+    <div id="testimonials" className="hidden lg:block pt-[15%]  z-10">
+      <div className="w-[60%] mx-auto lg:p-10 text-center leading-[50px]">
+        <p className="text-[20px] leading-[27px] md:leading-[40px] lg:leading-[65px] font-[100] lg:font-[400] md:text-[40px] lg:text-[50px]">
           Prenez le Premier Pas Vers Votre Transformation
         </p>
       </div>
-      <p className="text-center w-[65%] mx-auto text-[10px] md:text-[17px] lg:text-[25px] py-4  leading-[20px] md:leading-[35px] lg:leading-[50px] lg:py-2">
+      <p className="text-center w-[65%] mx-auto text-[10px] md:text-[20px] font-[100] lg:font-[400] lg:text-[25px] py-4  leading-[20px] md:leading-[35px] lg:leading-[50px] lg:py-2">
         Nous sommes enchantés de vous accueillir dans l'univers de la beauté
         redéfinie, orchestrée par le Dr Dominique Magnin. Chaque sourire, chaque
         émotion est une œuvre d'art en soi, et notre mission est de vous aider à
@@ -69,12 +69,18 @@ const Testimonials = ({ setContactOpen }) => {
           </p>
         </div>
       </div>
+
+      <div className="relative">
+        <img src="/new/bg-line2.png" className="absolute top-0 left-0" />
+      </div>
+
       <div className="flex items-center justify-center">
         <button
           onClick={() => setContactOpen(true)}
-          className="p-3 bg-black text-white uppercase my-[10%] "
+          className="bg-black rounded-md text-white font-[400] my-[10%] text-[15px] lg:text-[20px] uppercase px-3"
         >
-          consultation
+          <span className="text-[30px] lg:text-[35px]">C</span>
+          onsultation
         </button>
       </div>
     </div>
