@@ -19,23 +19,26 @@ const About = ({ setContactOpen }) => {
       <div className="relative">
         <img src="/new/bg-line1.png" className="absolute  top-48 left-0" />
       </div>
-      <div className="relative md:w-[90%] h-[400px] md:h-[600px] lg:h-[800px] my-6 mx-auto">
+      <div className="relative md:w-[90%]  md:h-[600px] lg:h-[800px] my-6 mx-auto">
         <div
-          className="z-30  gap-10  leading-[50px] flex justify-end text-start"
+          className="z-30  gap-10  leading-[50px] flex flex-col md:flex-row justify-end text-start"
           style={{
             backgroundImage: 'url("/new/bg-image-dm1.png")',
             backgroundSize: "cover",
           }}
         >
-          <div className="  w-full bg-black md:w-[50%] h-[400px] md:h-[600px] lg:h-[800px]">
+          <div className="relative  w-full bg-black md:w-[50%] h-[400px] md:h-[600px] lg:h-[800px]">
             <img
               src="/AboutUncle1.png"
               className="h-full w-auto object-cover z-10 "
             />
+            <p className="absolute py-4  border-b-[4px] border-black w-[65%] mx-[5%] bottom-0 md:hidden leading-[23px] md:leading-[40px] lg:leading-[45px] text-[20px] md:text-[25px] lg:text-[30px] uppercase font-raleway">
+              Rencontrez le <br /> Dr Dominique Magnin 
+            </p>
           </div>
 
-          <div className="h-[400px] md:h-[600px] lg:h-[800px] mt-[90%] md:mt-0 md:w-[65%] z-20 flex flex-col justify-between py-[4%] lg:py-[8%]">
-            <p className="leading-[23px] md:leading-[40px] lg:leading-[45px] text-[20px] md:text-[25px] lg:text-[30px] uppercase font-raleway">
+          <div className=" md:h-[600px] px-4 lg:h-[800px]  md:w-[65%] z-20 flex flex-col justify-between py-[2%] md:py-[4%] lg:py-[8%]">
+            <p className="hidden md:block leading-[23px] md:leading-[40px] lg:leading-[45px] text-[20px] md:text-[25px] lg:text-[30px] uppercase font-raleway">
               Rencontrez le Médecin Esthétique Dr Dominique Magnin 
             </p>
             <p className="text-[15px] lg:text-[20px] leading-[25px] md:leading-[30px] lg:leading-[35px] py-4 lg:py-0 uppercase font-raleway">
@@ -60,7 +63,7 @@ const About = ({ setContactOpen }) => {
                 sans déséquilibrer.
               </span>
             </p>
-            <div className="w-full  flex gap-10">
+            <div className="w-full flex py-4 gap-10 justify-between md:justify-normal">
               <button
                 onClick={() => setContactOpen(true)}
                 className="bg-black rounded-md text-white font-[400] text-[15px] lg:text-[20px] uppercase px-3"
@@ -115,7 +118,7 @@ const About = ({ setContactOpen }) => {
 
         {/* small devices tab */}
         <div
-          className={`absolute w-full  mx-auto top-[22%] ${
+          className={`absolute w-full  mx-auto top-0 ${
             open === false ? "left-[3000px]" : "left-0"
           } z-40
           leading-[50px] h-[600px] md:hidden justify-end duration-700 text-start bg-[#F5F5F5]`}

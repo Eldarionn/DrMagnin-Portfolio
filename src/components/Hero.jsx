@@ -33,10 +33,17 @@ const Hero = ({ setContactOpen }) => {
         >
           <button
             onClick={() => setContactOpen(true)}
-            className="bg-black flex rounded-md text-white font-[400] text-[15px] md:text-[15px] lg:text-[20px] items-center  uppercase px-4"
+            className="bg-black hidden md:flex rounded-md text-white font-[400] text-[15px] md:text-[15px] lg:text-[20px] items-center  uppercase px-4"
           >
             <p className="text-[30px] lg:text-[35px]">R</p>
             <p className="pt-2 pr-1">éservez une</p>{" "}
+            <p className="text-[30px] lg:text-[35px]">C</p>
+            <p className="pt-2">onsultation</p>
+          </button>
+          <button
+            onClick={() => setContactOpen(true)}
+            className="bg-black md:hidden flex rounded-md text-white font-[400] text-[15px] md:text-[15px] lg:text-[20px] items-center  uppercase px-4"
+          >
             <p className="text-[30px] lg:text-[35px]">C</p>
             <p className="pt-2">onsultation</p>
           </button>
@@ -44,7 +51,7 @@ const Hero = ({ setContactOpen }) => {
       </div>
       <div className="relative w-full  overflow-hidden">
         <img src={BG} alt="bg" />
-        <div className="rotate-[270deg]  absolute right-[-10%] lg:right-[-7%]  top-1/2">
+        <div className="rotate-[270deg]  absolute right-[-15%] md:right-[-10%] lg:right-[-7%]  top-1/2">
           <motion.p
             initial={{ y: 150 }}
             animate={{ y: 0 }}

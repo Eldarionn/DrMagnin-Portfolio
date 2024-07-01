@@ -19,7 +19,7 @@ const Home = () => {
       <div
         className={`fixed top-0 ${
           contactOpen === false ? "right-[-1500px]" : "right-0"
-        }  duration-700 h-screen w-full lg:w-[50%] bg-white shadow-xl  flex flex-col items-center justify-center z-[60]`}
+        }  duration-700 h-screen w-full lg:w-[40%] bg-white shadow-xl  flex flex-col items-center justify-center z-[60]`}
       >
         <div className="absolute top-5 left-5 cursor-pointer">
           <RxCross1
@@ -73,7 +73,7 @@ const Home = () => {
             <textarea
               type="text"
               id="name"
-              rows={8}
+              rows={10}
               className=" pl-1 md:pl-2 lg:pl-3  w-full border-l lg:border-l-[2px] pb-[5%] outline-none my-3 border-black border-b lg:border-b-[2px]"
             />
           </div>

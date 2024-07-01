@@ -7,7 +7,7 @@ const ServicesSM = () => {
   const [service4, setservice4] = useState(false);
 
   return (
-    <div id="services" className="md:hidden w-screen overflow-hidden">
+    <div id="services" className="md:hidden w-screen pt-[15%] overflow-hidden">
       <div className="w-[60%] mx-auto lg:p-10 text-center leading-[50px] lg:border-[5px] border-red-600">
         <p className="text-[20px] leading-[27px] md:leading-[40px] lg:leading-[65px] md:text-[30px] lg:text-[50px]">
           Prenez le Premier Pas Vers Votre Transformation
@@ -164,6 +164,15 @@ const ServicesSM = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center py-[10%]">
+        <button
+          onClick={() => setContactOpen(true)}
+          className="bg-black rounded-md text-white font-[400] text-[15px] lg:text-[20px] uppercase px-3"
+        >
+          <span className="text-[30px] lg:text-[35px]">C</span>
+          onsultation
+        </button>
       </div>
     </div>
   );
