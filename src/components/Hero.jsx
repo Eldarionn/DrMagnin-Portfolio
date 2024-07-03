@@ -28,7 +28,7 @@ const Hero = ({ setContactOpen }) => {
         {gifVisible && (
           <div>
             <img
-              src="/public/new/Signature-anim.gif"
+              src="/new/Signature-anim.gif"
               alt=""
               className="h-[65px] md:h-[80px] lg:h-[180px] w-auto"
             />
