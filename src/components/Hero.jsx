@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import BG from "../../public/HeroBG.jpeg";
 import { SlLocationPin } from "react-icons/sl";
 
 const Hero = ({ setContactOpen }) => {
+  const [gifVisible, setGifVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setGifVisible(true);
+    }, 2000);
+
+    return () => clearTimeout(timer); // Clean up the timer
+  }, []);
+
   return (
     <div className="grid md:grid-cols-2 h-screen overflow-hidden">
       <div className="flex pb-[15%] md:py-[10%] lg:py-[20%] lg:auto lg:h-screen px-[15%] flex-col items-center md:items-start justify-center">
@@ -15,17 +25,15 @@ const Hero = ({ setContactOpen }) => {
         >
           L'Art De la Beauté Révélée
         </motion.h1>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 2 }}
-        >
-          <img
-            src="/Signature-anim.gif"
-            alt=""
-            className="h-[65px] md:h-[80px] lg:h-[180px] w-auto"
-          />
-        </motion.div>
+        {gifVisible && (
+          <div>
+            <img
+              src="/public/new/Signature-anim.gif"
+              alt=""
+              className="h-[65px] md:h-[80px] lg:h-[180px] w-auto"
+            />
+          </div>
+        )}
         <motion.div
           initial={{ opacity: 0, y: 150 }}
           animate={{ opacity: 1, y: 0 }}
