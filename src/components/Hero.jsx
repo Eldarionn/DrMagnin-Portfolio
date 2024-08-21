@@ -23,7 +23,7 @@ const Hero = ({ setContactOpen }) => {
           transition={{ delay: 1, duration: 2 }}
           className="text-[25px] md:text-[60px] lg:text-[80px] font-[400] text-center md:text-start"
         >
-          L'Art De la Beauté Révélée
+          Hi, Im richa
         </motion.h1>
         {gifVisible && (
           <div>

@@ -7,8 +7,7 @@ const About = ({ setContactOpen }) => {
     <div id="about" className="py-[15%]  z-10 overflow-hidden">
       <div className="w-full md:w-[70%] mx-auto p-10 text-center leading-[25px] lg:leading-[50px]">
         <p className="text-[20px] md:text-[30px] lg:text-[50px]">
-          Que vous souhaitiez retrouver l'éclat de votre peau, redéfinir vos
-          contours ou raviver vos émotions...
+          Hello, Im richa!
         </p>
         <p className="text-[10px] md:text-[18px] leading-[20px] lg:leading-[40px] py-3 md:py-8 lg:0 lg:text-[25px] font-[300] lg:px-[15%]">
           à travers des techniques avancées, notre clinique est l'endroit où
